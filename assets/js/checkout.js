@@ -57,10 +57,10 @@ function CentralpayCheckout(data) {
    *                                    Dev Environment                                   *
    *                                                                                      */
   //========================================================================================
-  iframe.setAttribute(
-    'src',
-    `http://10.91.91.143:9900/?q=${encodeURIComponent(stringifiedData)}`
-  );
+  // iframe.setAttribute(
+  //   'src',
+  //   `http://10.91.91.143:9900/?q=${encodeURIComponent(stringifiedData)}`
+  // );
 
   //========================================================================================
   /*                                                                                      *
@@ -77,12 +77,12 @@ function CentralpayCheckout(data) {
    *                                Production Environment                                *
    *                                                                                      */
   //========================================================================================
-  // iframe.setAttribute(
-  //   'src',
-  //   `https://centralpay2.nibss-plc.com.ng/?q=${encodeURIComponent(
-  //     stringifiedData
-  //   )}`
-  // );
+  iframe.setAttribute(
+    'src',
+    `https://centralpay2.nibss-plc.com.ng/?q=${encodeURIComponent(
+      stringifiedData
+    )}`
+  );
 
   iframe.setAttribute('id', `iframe`);
   const wrapper = document.body;
