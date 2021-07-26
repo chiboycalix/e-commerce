@@ -47,20 +47,20 @@ function CentralpayCheckout(data) {
    *                                      local host                                      *
    *                                                                                      */
   //========================================================================================
-  iframe.setAttribute(
-    'src',
-    `http://localhost:3000/?q=${encodeURIComponent(stringifiedData)}`
-  );
+  // iframe.setAttribute(
+  //   'src',
+  //   `http://localhost:3000/?q=${encodeURIComponent(stringifiedData)}`
+  // );
 
   //========================================================================================
   /*                                                                                      *
    *                                    Dev Environment                                   *
    *                                                                                      */
   //========================================================================================
-  // iframe.setAttribute(
-  //   'src',
-  //   `http://10.91.91.143:9900/?q=${encodeURIComponent(stringifiedData)}`
-  // );
+  iframe.setAttribute(
+    'src',
+    `http://10.91.91.143:9900/?q=${encodeURIComponent(stringifiedData)}`
+  );
 
   //========================================================================================
   /*                                                                                      *
