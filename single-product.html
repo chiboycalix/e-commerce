@@ -120,17 +120,19 @@
               <p>Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit. </p>
               <span>7 left on stock</span>
 
-              <form name="cpay">
                 <form name="cpay" action="https://centralpay2.nibss-plc.com.ng/">
-                <input type="hidden" name="merchantid" value="NIBSS0000004758" />
-                <input type="hidden" name="productId" value="123546" />
-                <input type="hidden" name="productDescription" value="Gucci Men Shoe" />
-                <input type="hidden" name="amount" value="100" />
-                <input type="hidden" name="currency" value="566" />
-                <input type="hidden" name="transactionId" value="123456789" />
-                <input type="hidden" name="responseUrl" value="http://localhost/response" />
-                <input type="hidden" name="hash" value="e41ed98991f66d11b34c20c0e8dedca9de2689d08112a464be9250f01f5fcd47" />
-                <button type="button" onclick="makePayment()" class="button">Order Now</button>
+                  <input type="hidden" name="merchantid" value="NIBSS0000004758" />
+                  <input type="hidden" name="productId" value="123546" />
+                  <input type="hidden" name="productDescription" value="Gucci Men Shoe" />
+                  <input type="hidden" name="amount" value="100" />
+                  <input type="hidden" name="currency" value="566" />
+                  <input type="hidden" name="transactionId" value="123456789" />
+                  <input type="hidden" name="responseUrl" value="http://localhost/response" />
+                  <input type="hidden" name="hash" value="e41ed98991f66d11b34c20c0e8dedca9de2689d08112a464be9250f01f5fcd47" />
+                  <input type="hidden" name="paymentMode" value="NQR, Account, mCash" />
+                  <input type="hidden" name="logo" value="https://res.cloudinary.com/dutbqk0ux/image/upload/v1627032218/timileinlogo.png"/>
+                  <!-- <button type="button" onclick="makePayment()" class="button">Order Now</button> -->
+                  <button type="submit" onclick="makePayment()" class="button">Order Now</button>
               </form>
 
               <div class="down-content">
